@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+<style>
+    /* Mobile devices (Portrait and Landscape) */
+@media screen and (max-width: 767px) {
+    /* Styles for mobile devices go here */
+}
+
+/* Tablets (Portrait and Landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets go here */
+}
+
+/* Laptops and smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for laptops go here */
+}
+
+/* Desktops (Large screens) */
+@media screen and (min-width: 1441px) {
+    /* Styles for desktops go here */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(image/navid-sohrabi-zIAuzjIcCvk-unsplash.jpg);
+    background-position: center;
+}
+
+header {
+    background-color: #103f4b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #103f4b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b7f94;
+}
+
+#tracking-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #6b8d96;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Order Tracking</h1>
+    </header>
+    <main>
+        <form id="tracking-form">
+            <label for="order-id">Order ID:</label>
+            <input type="text" id="order-id" name="order-id" required>
+            <button type="submit">Track Order</button>
+        </form>
+        <div id="tracking-details"></div>
+    </main>
+    <script src="tracking_order.js"></script>
+</body>
+</html>

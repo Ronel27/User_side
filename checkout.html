@@ -12,8 +12,8 @@
         <nav>
             <ul>
                 <li><a href="lpage.html">Home</a></li>
-                <li><a href="cart.html">Browse Products</a></li>
-                <li><a href="../Checkout/checkout.html">Track Orders</a></li>
+                <li><a href="cart.html">Menu</a></li>
+                <li><a href="tracking_order.html">Track Orders</a></li>
             </ul>
         </nav>
     </header>
@@ -27,18 +27,23 @@
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required>
             
-            <label for="card">Credit Card:</label>
-            <input type="text" id="card" name="card" required>
+            <label for="card">Payment Option:</label>
+            <select id="payment-option" required>
+                <option value="Cash On Delivery">Cash On Delivery</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Debit Card">Credit Card</option>
+            </select>
+
             <label for="shipping-option">Choose a shipping option:</label>
             <select id="shipping-option" required>
                 <option value="standard">Standard - 70.00</option>
-                <option value="express">Express - 120.00</option>
+                <option value="express">Rush - 120.00</option>
             </select>
             <label for="courier">Choose a courier:</label>
                     <select id="courier-option" required>
-                        <option value="standard">J&T</option>
-                        <option value="express">Express</option>
-                        <option value="LBC">LBC</option>
+                        <option value="standard">Food Panda</option>
+                        <option value="express">Grab</option>
+                        <option value="LBC">Maxim</option>
                     </select>
 
                     <a href="../thanks.html" >
